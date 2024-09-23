@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+        form{
+            width: 800px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <form class="button ">  
+                
+                <a class="btn btn-primary" href="form_type_article.html"  > Type article</a>
+                <a class="btn btn-primary" href="list_article.html">Liste article </a>
+               <a class="btn btn-primary" href="list_type_article.html"> Liste type article</a>
+             </form>
+            
+    </nav>
+    
+    <form method="get" action="form_article.html">
+        <fieldset>
+            <input type="hidden" name="id" value="12345">
+
+            <label for="id">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Entrez le nom de l'article" required>
+            <br>
+            <label for="article">Type d'article :</label>
+            <select name="type_article_id" value="id" id="article" required>
+                <option value="">selectionez un type</option>            
+                <option value="1">Type 1</option>
+                <option value="2">Type 2</option>
+                <option value="3">Type 3</option>
+                <option value="4">Type 4</option>
+            </select>
+            <br>
+            <label for="prix">Prix :</label>
+            <input type="number" name="prix" id="prix" placeholder="entrez le prix" required>
+
+            <br>
+            <label for="stock">Stock :</label>
+            <input type="number" name="stock" id="stock" placeholder="Entrez la quantité en stock" required>
+            <br>
+            <label for="description">Description :</label>
+            <textarea name="description" id="description" placeholder="Entrez la description de l'article"></textarea>
+            <br>
+            <label for="image">Image:</label>
+            <input type="text" name="image" id="image" placeholder="Entrez l'URL de l'image">
+            <br>
+            <input type="submit" name="valider" value="valider">
+
+        </fieldset>
+    </form> 
+    <script src="bootstrap/css/bootstrap.js"></script> 
+</body>
+</html>

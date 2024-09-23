@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libelle</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        form{
+            width: 500px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <form class="button ">  
+                <a class="btn btn-primary"  href="form_article.html" >form article </a>
+                
+                <a class="btn btn-primary" href="list_article.html">Liste article </a>
+               <a class="btn btn-primary" href="list_type_article.html"> Liste type article</a>
+             </form>
+            
+    </nav>
+    
+    <form method="get" action="from_type_artcile.html" >
+        <fieldset>
+            <legend>Nouveau type d'article</legend>
+            <input type="hidden" name="id" value="12345">
+            <label for="libelle">Libelle :</label>
+
+            <input type="text" id="libelle" name="libelle" value=""  required ><br><br>
+            
+
+            <input type="submit"  value="valider">
+        </fieldset>
+        </form> 
+ <script src="bootstrap/css/bootstrap.js"></script>      
+</body>
+</html>
